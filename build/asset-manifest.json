@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f87971f.css",
+    "main.js": "/static/js/main.d9cf2f7b.js",
+    "static/media/boxicons.svg": "/static/media/boxicons.17f6cb4eef77f07f2caa.svg",
+    "static/media/boxicons.eot": "/static/media/boxicons.dfc882ec9689f820c7c9.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.1a7e2e2bf3a855e674d4.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.22afc8ee5cfc540cddff.ttf",
+    "static/media/xyma.png": "/static/media/xyma.c614030b2cd257f55f9a.png",
+    "static/media/boxicons.woff2": "/static/media/boxicons.60f603cccbdff82a523c.woff2",
+    "static/media/xyma_logo.png": "/static/media/xyma_logo.4e2ffa7fd8e87d8d9843.png",
+    "static/media/1311213_313.svg": "/static/media/1311213_313.97dab9f242ca415357aab1775ebfe239.svg",
+    "static/media/7079771_3324619.svg": "/static/media/7079771_3324619.2f49372119397cfaea0ade143ac60ff3.svg",
+    "static/media/density.png": "/static/media/density.dd960a427f5ca03cea8d.png",
+    "static/media/experiment.png": "/static/media/experiment.6214431cc03f97b3c273.png",
+    "static/media/water.png": "/static/media/water.8e84ec857d6c6254122f.png",
+    "static/media/thermometer.png": "/static/media/thermometer.23775b9abdaba30d4c03.png",
+    "index.html": "/index.html",
+    "main.2f87971f.css.map": "/static/css/main.2f87971f.css.map",
+    "main.d9cf2f7b.js.map": "/static/js/main.d9cf2f7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f87971f.css",
+    "static/js/main.d9cf2f7b.js"
+  ]
+}
