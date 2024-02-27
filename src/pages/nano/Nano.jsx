@@ -54,6 +54,43 @@ const Nano = () => {
   const chart_data = [...chartData].reverse();
   const time_data = [...time].reverse();
 
+  // const chartOptions1 = {
+  //   grid: {
+  //     show: false,
+  //   },
+  //   series: [
+  //     {
+  //       name: "value",
+  //       data: chart_data,
+  //       stroke: {
+  //         curve: "smooth",
+  //         dashArray: [5, 5],
+  //       },
+  //     },
+  //   ],
+  //   chart: {
+  //     height: 500,
+  //     type: "line",
+  //   },
+  //   dataLabels: {
+  //     enabled: false,
+  //   },
+  //   xaxis: {
+  //     categories: time_data,
+  //     labels: {
+  //       style: {
+  //         colors: "#ffffff",
+  //       },
+  //     },
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       style: {
+  //         colors: "#ffffff",
+  //       },
+  //     },
+  //   },
+  // };
   const chartOptions1 = {
     grid: {
       show: false,
@@ -90,7 +127,28 @@ const Nano = () => {
         },
       },
     },
-  };
+    tooltip: {
+      theme: "dark", // Set the theme to dark
+      style: {
+        background: "#000000", // Set the background color to black
+        color: "#ffffff", // Set the text color to white
+      },
+      y: {
+        title: {
+          formatter: function(seriesName) {
+            return 'Value: ';
+          },
+        },
+        formatter: function(value) {
+          return value;
+        },
+      },
+      marker: {
+        show: true,
+      },
+    },
+  };  
+  
 
   console.log(startDate, endDate);
 
@@ -121,7 +179,7 @@ const Nano = () => {
     <div className="nano">
       <div className="box">
         <div className="select_value">
-          <label htmlFor="dropdown">Select</label>
+          <label htmlFor="dropdown">Select: </label>
           <select className="value"
             id="dropdown"
             onChange={handleOptionChange}
@@ -136,7 +194,7 @@ const Nano = () => {
         </div>
         <div className="time">
           <div className="start">
-            <label>TimeFrom</label>
+            <label>TimeFrom: </label>
             <input
               type="date"
               id="timeFrom"
@@ -145,7 +203,7 @@ const Nano = () => {
             />
           </div>
           <div className="end">
-            <label>TimeTo</label>
+            <label>TimeTo: </label>
             <input
               type="date"
               id="timeTo"
@@ -155,11 +213,11 @@ const Nano = () => {
           </div>
         </div>
         <div className="last_value">
-          <span>Last Value</span>
+          <span>Last Updated Value: </span>
           <p>{chartData[0]}</p>
         </div>
         <div className="last">
-          <span>Last Time</span>
+          <span>Last Updated Time: </span>
           <p>{time[0]}</p>
         </div>
       </div>
