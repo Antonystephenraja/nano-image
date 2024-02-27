@@ -268,6 +268,8 @@ const Dashboard = () => {
         </div>
       </div>
 
+      
+
       <div className="graph_boxes">
         <div className="list">
           <RadioGroup onChange={handleOptionChange} horizontal>
